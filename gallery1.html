@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="gallerycss\gallery.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.hover figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	opacity: .6;
+	}
+</style>
+<body>
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="gallery\m3.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Its All</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">About</h5>
+    <h3 class="w3-hide-medium w3-hide-small">Music</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+
+  <a href="#gallery" class="w3-bar-item w3-button">Gallery</a>
+</div>
+</div>
+
+
+<img src="gallery\m13.jpg" alt="Smiley face" width="240" height="700" align="left"> 
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="gallery">
+
+
+
+  <!-- Images (Portfolio) -->
+ <div class="row">
+  <div class="column">
+  <div class="hover column">
+  <figure>
+    <img src="gallery\m4.jpg" alt="Snow" width=560 height=240>
+	</figure>
+	</div>
+  </div>
+  <div class="column">
+   <div class="hover column">
+  <figure>
+    <img src="gallery\m5.jpg" alt="Forest" width=560 height=240>
+	</figure>
+	</div>
+  </div> 
+</div>
+
+<div class="row">
+  <div class="column">
+   <div class="hover column">
+  <figure>
+    <img src="gallery\m6.jpg" alt="Snow" width=560 height=240>
+	</figure>
+	</div>
+  </div>
+  <div class="column">
+   <div class="hover column">
+  <figure>
+    <img src="gallery\m7.jpg" alt="Forest" width=560 height=240>
+	</figure>
+	</div>
+	</div> 
+</div>
+<div class="row">
+  <div class="column">
+   <div class="hover column">
+  <figure>
+    <img src="gallery\m8.jpg" alt="Snow" width=560 height=240>
+	</figure>
+	</div>
+  </div>
+  <div class="column">
+   <div class="hover column">
+  <figure>
+    <img src="gallery\m12.jpg" alt="Forest" width=560 height=240>
+	</figure>
+	</div>
+	</div> 
+  </div>
+
+  <!-- Contact -->
+	
+	
+<p>
+
+
+</p>
+     <div class="w3-col s3">
+      <a href="project.html" class="w3-button w3-block w3-black">RETURN BACK TO HOME</a>
+    </div>
+ 
+    <p>Powered by Light Music</a></p>
+
+  </div>
+
+  
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>

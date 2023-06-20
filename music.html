@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>listen now</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="smusic\music.css">
+<link rel="stylesheet" href="smusic\fonts.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>LISTEN TO YOUR<br>FAVOURITE MUSIC</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">KATY PERRY</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SKYLAR GREY</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">BRUNO MARS</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">LISTEN TO US ON</a> 
+   
+    <a href="project.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Return to home page</a>
+	
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+  <img src="Music\spotify.png" width="1000" height="300">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>KATY PERRY</b></h1>
+    <hr style="width:50px;border:5px  blue" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+     <img src="Music\m10.jpg" width="200" height="200" ><p>"Roar" is a song by American singer Katy Perry for her fourth studio album.</p>
+      <audio controls>
+  <source src="songs\Roar.ogg" type="audio/ogg">
+  <source src="songs\Roar.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<br>
+	 <img src="Music\m11.jpg"  width="200" height="200"><p>"Firework" is a song by American singer Katy Perry from her third studio album, Teenage Dream (2010).Capitol Records released it as the album's third single on October 26, 2010.Enjoy.</p>
+      <audio controls>
+  <source src="songs\Fireworks.ogg" type="audio/ogg">
+  <source src="songs\Fireworks.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</br>
+	   <img src="Music\m12.png"  width="200" height="200"><p>""Hot n Cold" is a song by American singer Katy Perry. The song was written by Perry, Dr. Luke, and Max Martin and produced by Dr. Luke and Benny Blanco for her second studio album, One of the Boys (2008). </p>
+      <audio controls>
+  <source src="songs\KP-hot and cold.ogg" type="audio/ogg">
+  <source src="songs\KP-hot and cold.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    </div>
+
+    <div class="w3-half">
+       <img src="Music\m13.png"  width="200" height="200"><p>"Teenage Dream is the third studio album by American singer Katy Perry.[2] It was released on August 24, 2010 </p>
+      <audio controls>
+  <source src="songs\teenage.ogg" type="audio/ogg">
+  <source src="songs\teenage.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+      
+	  <br>
+	   <img src="Music\m14.png"  width="200" height="200"><p>""Dark Horse" is a song recorded by American singer Katy Perry featuring rapper Juicy J. It was originally released on September 17, 2013, by Capitol Records as the first promotional single from Perry's fourth studio album.</p>
+      <audio controls>
+  <source src="songs\dark horse.ogg" type="audio/ogg">
+  <source src="songs\dark horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</br>
+     
+	 
+	  <img src="Music\m15.png"  width="200" height="200"><p>""Swish Swish" is a song by American singer Katy Perry featuring American rapper Nicki Minaj for Perry's fifth studio album, Witness (2017). It was written by Perry, Duke Dumont, Sarah Hudson. </p>
+      <audio controls>
+  <source src="songs\swish.ogg" type="audio/ogg">
+  <source src="songs\swish.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>SKYLAR GREY</b></h1>
+    
+	<div class="w3-row-padding">
+    <div class="w3-half">
+     <img src="Music\m16.jpg" width="200" height="200" ><p>Aquaman (Original Motion Picture Soundtrack) is the soundtrack to the film of the same name. The music is composed and arranged by Rupert Gregson-Williams. </p>
+      <audio controls>
+  <source src="songs\everything.ogg" type="audio/ogg">
+  <source src="songs\everything.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+	<br>
+	 <img src="Music\m17.jpg" width="200" height="200" ><p>Furious 7: Original Motion Picture Soundtrack is the soundtrack to Furious 7. It was released on March 17.</p>
+      <audio controls>
+  <source src="songs\return.ogg" type="audio/ogg">
+  <source src="songs\return.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</br>
+</div>
+
+
+ <div class="w3-half">
+       <img src="Music\m18.jpg"  width="200" height="200"><p>The discography of Skylar Grey (formerly Holly Brook), an American singer-songwriter consists of three studio albums, five extended plays (EPs). </p>
+      <audio controls>
+  <source src="songs\stand.ogg" type="audio/ogg">
+  <source src="songs\stand.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+	
+	<br>
+	 <img src="Music\m19.jpg"  width="200" height="200"><p>This song is by Skylar Grey and appears on the movie soundtrack Suicide Squad: The Album (2016).</p>
+      <audio controls>
+  <source src="songs\wreck.ogg" type="audio/ogg">
+  <source src="songs\wreck.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</br>
+  </div>
+  
+  
+   <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  
+  <!-- Designers -->
+   <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>BRUNO MARS</b></h1>
+    
+	<div class="w3-row-padding">
+    <div class="w3-half">
+     <img src="Music\m20.jpg" width="200" height="200" ><p>24K Magic (stylized as XXIVK Magic) is the third studio album by American singer and songwriter Bruno Mars. It was released worldwide on November 18, 2016, by Atlantic Records. </p>
+      <audio controls>
+  <source src="songs\24k.ogg" type="audio/ogg">
+  <source src="songs\24k.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</div>
+
+<div class="w3-half">
+       <img src="Music\m21.jpg"  width="200" height="200"><p>"Uptown Funk" is a song recorded by British record producer Mark Ronson featuring American singer and songwriter Bruno Mars, for Ronson's fourth studio album, Uptown Special (2015). </p>
+      <audio controls>
+  <source src="songs\uptown.ogg" type="audio/ogg">
+  <source src="songs\uptown.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<!--- Packages--->
+<div class="w3-container" id="packages" style="margin-top:80px">
+<div align="right" >
+<h1 class="w3-xxxlarge w3-text-blue"><b>Get it on</b></h1>
+	
+	 <a href="https://play.google.com/music/listen"><img src="Music\m22.png" width="300" height="300"></a>
+
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by LIGHT MUSIC</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
